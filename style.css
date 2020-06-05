@@ -24,7 +24,6 @@ main{
     text-align: center;
     justify-content: center;
     align-content: center;
-    border: 4px solid rgb(35, 204, 63);
     padding:10px;
     height: 100%;
     margin-left: auto;
@@ -50,19 +49,25 @@ main{
 .icon_container{
     width:70%;
     margin-top:10px;
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
     justify-content:space-around;
     padding-left: 4px;
+    padding:16px;
+
     
 
 }
 .icon{
-    width:10%;
+    width:100%;
+    height:60px;
     background-color: hsl(229, 57%, 11%) ;
-    padding:16px;
-    margin-top:5px ;
-    padding-bottom:18px ;
+    padding:10px;
+    margin:5px ;
+    /* padding-bottom:18px ; */
     border-radius: 10px;
+
+
 
 
 }
@@ -76,31 +81,64 @@ main{
     flex-direction: column;
 
 }
+.progress_bar{
+    width:80%;
+    height:1em;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    margin-bottom:0px;
+    position: relative;
+
+}
+.loading{
+    widows:100%;
+    height:.8em;
+    background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+}
 .bar_remaining{
     position: absolute;
     bottom:10%;
     left: 30%;
     background-color: white;
     border-radius: 8px;
-    padding:4px;
+    padding:2px;
+    margin-bottom:-40px;
     width: 30%;
 }
 .progress{
     color: rgba(255, 255, 255, 0.658);
-    font-weight:90;
+    margin-top:20px;
+    font-weight: 100px;
+    margin-bottom: 0px;
+    font-size: 20px;
 }
 .capacity_container{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-    padding:0px;
-    margin-bottom: 20px;
+    margin-right: auto;  
+    margin-bottom:20px;    
     color:rgba(255, 255, 255, 0.678);
     font-size: smaller;
     align-content: flex-end;
+
+}
+.initial{
+    padding:5px;
+    margin-top:0px;
+}
+.end{
+    padding:5px;
+    margin-top:0px;
+}
 }
 
 
