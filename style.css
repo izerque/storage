@@ -1,0 +1,293 @@
+
+ 
+@media only screen and ( max-width:600px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-size:100%;
+        background-repeat: no-repeat;
+
+    }
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+
+}
+.card_container{
+    /* border: 1px solid white; */
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width:400px;
+    flex-grow: 1;
+
+}
+.head_container{
+    background-color: hsl(228, 56%, 26%);
+    padding: 1rem 2rem;
+    border-radius:8px;
+    border-top-right-radius:5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.logo{
+    padding:1rem  0rem 1.2rem ;
+    /* border: 1px solid white; */
+
+}
+.icon_container{
+    /* border: 1px solid white; */
+    margin-top: .5rem;
+    max-width: 100rem;
+    flex-grow: 1;
+    width: 160px;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+    height: auto;
+
+}
+.icon{
+    padding: .5rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    font-size: 5rem;
+    /* width: 30px; */
+
+}
+.progress_bar_container{
+    /* border: 1px solid white; */
+    margin-top: 1rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius:8px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+}
+.progress{
+    color: ivory;
+    width: 80%;
+    font-size: small;
+    margin-bottom: 0px;
+    letter-spacing: 0.5px;
+    
+}
+.progress_bar{
+    width: 90%;
+    background-color:hsl(229, 57%, 11%);
+    /* border: 1px solid rgba(65, 65, 65, 0.527); */
+    border-radius: 5rem;
+    margin-top:.5rem;
+    height:.8rem;
+    padding:2px;
+
+
+}
+.loading{
+    width:80%;
+    background-image: linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 100%;
+    border-radius: 5rem;
+    position: relative;
+    display: flex;
+    padding: .5px 2px;
+   justify-content: flex-end;
+}
+.loading_dot{
+    width: 12px;
+    height: 100%;
+    background-color: white;
+    border-radius: 50px;
+}
+.bar_remaining{
+    background-color: whitesmoke;
+    border-radius:8px;
+    position: absolute;
+    padding: 0rem 1.5rem;
+    top:130px;
+
+
+}
+.capacity_container{
+    width:93%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    padding: 0px;
+    margin-top:3px;
+    margin-bottom:75px ;
+
+}
+.initial ,.end{
+    color: white;
+    margin: 0px;
+    font-size: small;
+}
+}
+
+
+@media only  screen and (min-width:600px){
+    body{
+        background-image:url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:100%;
+        background-color: hsl(229, 57%, 11%);
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1rem;
+    
+    }
+    .card_container{
+        /* border: 1px solid white; */
+        width:70%;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content:center;
+        /* text-align: center; */
+        border: 1px solid white;
+        /* flex-direction: ; */
+        /* min-width:60rem;
+        flex-wrap: wrap; */
+       
+
+    
+    }
+    .head_container{
+        background-color: hsl(228, 56%, 26%);
+        padding: 1rem 2rem;
+        border-radius:8px;
+        border-top-right-radius:5rem;
+        width:30%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+    }
+    .logo{
+        padding:1rem  0rem 1.2rem ;
+        /* border: 1px solid white; */   
+    }
+    .icon_container{
+        /* border: 1px solid white; */
+        margin-top: .5rem;
+        /* max-width: 100rem;
+        flex-grow: 1;
+        flex-wrap: wrap; */
+        width: 160px;
+        display: flex;
+        align-items:baseline;
+        justify-content:space-between;
+        height: auto;
+    
+    }
+    .icon_container{
+        /* border: 1px solid white; */
+        margin-top: .5rem;
+        /* max-width: 100rem;
+        flex-grow: 1; */
+        width: 160px;
+        display: flex;
+        align-items:baseline;
+        justify-content:space-between;
+        height: auto;
+    
+    }
+    .icon{
+        padding: .5rem;
+        background-color: hsl(229, 57%, 11%);
+        border-radius: 5px;
+        font-size: 5rem;
+        /* width: 30px; */
+    
+    }
+    .progress_bar_container{
+        margin-left: 2rem;
+        /* border: 1px solid white; */
+        margin-top: 1rem;
+        width:35rem;
+        border:1px solid white ;
+        background-color: hsl(228, 56%, 26%);
+        border-radius:8px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-top: 10px;
+        flex-grow: 1;
+    }
+    .progress{
+        color: ivory;
+        width: 80%;
+        font-size: small;
+        margin-bottom: 0px;
+        letter-spacing: 0.5px;
+        
+    }
+    .progress_bar{
+        width: 90%;
+        background-color:hsl(229, 57%, 11%);
+        /* border: 1px solid rgba(65, 65, 65, 0.527); */
+        border-radius: 5rem;
+        margin-top:.5rem;
+        height:.8rem;
+        padding:2px;
+    
+    
+    }
+    .loading{
+        width:80%;
+        background-image: linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        height: 100%;
+        border-radius: 5rem;
+        position: relative;
+        display: flex;
+        padding: .5px 2px;
+       justify-content: flex-end;
+    }
+    .loading_dot{
+        width: 12px;
+        height: 100%;
+        background-color: white;
+        border-radius: 50px;
+    }
+    .bar_remaining{
+        background-color: whitesmoke;
+        border-radius:8px;
+        position: absolute;
+        padding: 0rem 1.5rem;
+        top:-30px;
+        right: 30px;
+    
+    
+    }
+    .capacity_container{
+        width:93%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid white; */
+        padding: 0px;
+        margin-top:3px;
+        margin-bottom:40px ;
+    
+    }
+    .initial ,.end{
+        color: white;
+        margin: 0px;
+        font-size: small;
+    }
+}
+
